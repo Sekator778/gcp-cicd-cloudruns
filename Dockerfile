@@ -4,7 +4,6 @@
 
 FROM ubuntu:21.04
 RUN echo 'Start dockerfile'
-RUN apt update
 RUN apt-get -y install apache2
 
 RUN echo 'Docker Image on CloudRun of Sekator!<br>'   > /var/www/html/index.html
