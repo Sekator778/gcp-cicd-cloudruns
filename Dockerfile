@@ -3,11 +3,12 @@
 #---------------------------------------------------------------------------
 
 FROM ubuntu:21.04
-RUN echo 'Start dockerfile'
+
+RUN apt-get -y update
 RUN apt-get -y install apache2
 
 RUN echo 'Docker Image on CloudRun of Sekator!<br>'   > /var/www/html/index.html
-RUN echo '<b><font color="magenta">Version 1.10</font></b>' >> /var/www/html/index.html
+RUN echo '<b><font color="magenta">Version 1.1</font></b>' >> /var/www/html/index.html
 
 CMD ["/usr/sbin/apache2ctl", "-D","FOREGROUND"]
 EXPOSE 80
