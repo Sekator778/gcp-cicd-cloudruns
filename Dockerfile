@@ -3,7 +3,7 @@
 #---------------------------------------------------------------------------
 
 FROM ubuntu:21.04
-
+RUN echo 'Start dockerfile'
 RUN apt-get -y update
 RUN apt-get -y install apache2
 
